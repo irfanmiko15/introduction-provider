@@ -16,15 +16,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider<Increment>(
-          create: (_)=>Increment(),
-          
-        ),
-        
-      ],
-      child: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text(widget.title),
         ),
@@ -53,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Icon(Icons.add),
           ),
         ), // This trailing comma makes auto-formatting nicer for build methods.
-      ),
+      
     );
   }
 }
